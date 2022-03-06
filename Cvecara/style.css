@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        overflow: hidden;
+        width: 100%;
+    }
+    body {
+        background-color: rgb(255, 205, 213);
+    }
+    header {
+        background-image: url(slike/cvece.jpg);
+        height: 50px;
+    }
+    h1 {
+        color: yellow;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+    div {
+        padding: 3px;
+        background-color: rgb(255, 205, 213);
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    nav ul li {
+        
+        background-color: rgb(228, 178, 185);
+        border: 1px solid rgb(216, 133, 144);
+        border-radius: 10px;
+    }
+    nav ul li a {
+        padding: 8px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        padding: 10px;
+        background-color: rosybrown;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        
+    }
+    .naslovi {
+        padding: 10px;
+    }
+    h3 {
+        text-align: center;
+        font-size: 26px;
+        color: rgb(109, 18, 18);
+        font-family: 'Georgia', serif;
+    }
+    fieldset {
+        border: none;
+    }
+    .cvet {
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    label {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .gift {
+        margin-left: 40%;
+        padding: 8px;
+    }
+    .plati {
+        margin-left: 40%;
+        padding: 8px;
+    }
+    .dugmad {
+        width: 49.6%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(211, 155, 181);
+
+    }
+    #zadnjiNaslov {
+        text-align: center;
+        padding-top: 15px;
+        color: purple;
+    }
+    #rezultat {
+        text-align: center;
+        color: purple;
+        font-size: 20px;
+    }
+    .flower {
+        display: inline-block;
+    }
+    #dugPoruci {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    #dugPoruci input {
+        width: 100px;
+        padding: 15px;
+        background-color: purple;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgb(116, 56, 116);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: rgb(255, 205, 213);
+    }
+    header {
+        background-image: url(slike/cvetovi.jpg);
+        padding: 20px;
+        width: 100%;
+    }
+    h1 {
+        color: yellow;
+        text-align: center;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    nav ul li {
+        display: block;
+        float: left;
+        width: calc(100% / 4);
+        background-color: rgb(216, 133, 144);
+        border: 1px solid rgb(211, 155, 181);
+    }
+    nav ul li a {
+        padding: 8px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        
+    }
+    nav ul li a:hover {
+        background-color: rgb(248, 198, 206);
+    }
+    .prvi {
+        background-color: rgb(192, 77, 167);
+        width: 35%;
+        margin: 5px;
+        float: left;
+        border-radius: 10px;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .drugi {
+        width: 60%;
+        float: left;
+    }
+    p {
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        padding: 15px;
+        text-align: center;
+    }
+    fieldset {
+        border: none;
+        color: purple;
+        margin-top: 10px;
+        padding-top: 15px;
+        padding-left: 50px;
+        padding-bottom: 15px;
+        margin-left: 30%;
+        margin-right: 30%;
+        background-color: rgb(216, 133, 144);
+    }
+    .naslovi {
+        padding: 8px;
+    }
+    .cvet {
+        width: 60%;
+    }
+    .dugmad {
+        width: 100px;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: purple;
+        color: white;
+    }
+    #zadnjiNaslov {
+        text-align: center;
+        padding-top: 15px;
+        color: purple;
+    }
+    #rezultat {
+        text-align: center;
+        color: purple;
+        font-size: 20px;
+    }
+    .flower {
+        display: inline-block;
+    }
+    #dugPoruci {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    #dugPoruci input {
+        width: 100px;
+        padding: 15px;
+        background-color: purple;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgb(116, 56, 116);
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cvecara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="row">
+        <header class="">
+            <h1><i>Cvecara "Lepse Sutra"</i></h1>
+        </header>
+    </div>
+
+    <div class="row">
+        <nav>
+            <ul>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Porudzbine</a></li>
+                <li><a href="#">Galerija</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="prvi row">
+		<p>
+            Na ovoj stranici mozete poruciti vas buket, plus neke slasne dodatke kako bi obradovali vama dragu osobu.
+            Za pocetak u input polja unesite koliko cvetova od svakog ponudjenog tipa zelite za svoj buket. Mozete uzeti po jedan ili vise od svakog, a mozete se opredeliti i za cvetove samo jednog ili dva tipa. Cena po cvetu je navedena u samom input polju.
+        </p>
+
+        <p>
+            Ako zelite mozete i odabrati dodatan poklon cekiranjem opcija koje vam odgovaraju. Svaka opcija kosta dodatnih 500 dinara.
+        </p>
+
+        <p>
+            Cekirajte zeljeni vid placanja. Ukoliko izaberete placanje karticom, a ukupna vrednost porudzbine je u iznosu preko 2000 dinara, dobijate dodatni popust od 10%.
+        </p>
+        
+        <p>
+            Klikom na dugme <i><b>"Izracunaj"</b></i> dobicete pregled vase porudzbine ukljucujuci i cenu sa i bez popusta (ukoliko ste se opredili za placanje karticom).
+            Nakon sto pregledate/modifikujete vasu pordudzbinu, kliknite na dugme <i><b>"Zavrsi"</b></i> da bi presli na sledeci korak porucivanja.
+        </p>
+        <img src="slike/flowers.png" alt="">
+	</div>
+	<div class="drugi row">
+		<div>
+			<form id="form-div">
+				<fieldset>
+					<div>
+						<h3 class="naslovi">Odaberite Cvece</h3>
+					</div>
+			
+					<div>
+						<input type="number" name="" id="ruza" class="cvet" placeholder="Cena po cvetu je 150 din.">
+						<label>Ruze</label>
+					</div>
+					<br>
+			
+					<div>
+						<input type="number" name="" id="ljiljan" class="cvet" placeholder="Cena po cvetu je 120 din.">
+						<label>Ljiljani</label>
+					</div>
+					<br>
+			
+					<div>
+						<input type="number" name="" id="gerber" class="cvet" placeholder="Cena po cvetu je 70 din.">
+						<label>Gerberi</label>
+					</div>
+					<br>
+			
+			
+					<div>
+						<h3 class="naslovi">Dodatni Pokloni</h3>
+					</div>
+			
+					<div class="gift">
+						<input id="bombone" type="checkbox" name="">
+						<label>Bombonjera</label>
+					</div>
+					<div class="gift">
+						<input id="cokoladice" type="checkbox" name="">
+						<label>Cokolada</label>
+					</div>
+					<div class="gift">
+						<input id="pice" type="checkbox" name="">
+						<label>Sampanjac</label>
+					</div>
+			
+					<div>
+						<h3 class="naslovi">Placanje</h3>
+                    </div>
+			
+					<div class="plati">
+						<input id="novac" type="radio" name="placanje">
+						<label>Kes</label>
+					</div>
+					<div class="plati">
+						<input id="karta" type="radio" name="placanje">
+						<label>Kartica</label>
+					</div>
+					<br>
+					<br>
+			
+					<div>
+						<input class="dugmad" type="button" value="Izracunaj" onclick="izracunavanjePorudzbine()">
+						<input class="dugmad" type="reset" value="Resetuj" onclick="clearContent()">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="row">
+			<h3 id="zadnjiNaslov">Vasa Porudzbina</h3>
+            <div id="rezultatRuze">
+                
+			</div>
+			<div id="rezultatLjiljani">
+                
+			</div>
+			<div id="rezultatGerberi">
+                
+			</div>
+			<div id="rezultat">
+                
+			</div>
+		</div>
+
+		<div id="dugPoruci" class="row">
+			<a href="#" target="_blank"><input id="kraj" type="submit" value="Zavrsi"></a>
+		</div>
+	</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
